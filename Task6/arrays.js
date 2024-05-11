@@ -1,13 +1,4 @@
-// function Array(){
-//     const Data=fetch("https://restcountries.com/v3.1/all").then(r=>r.json()).then(data=>{
 
-//     const aisa=data.filter(county=>county.region==="Aisa");
-
-//     console.log(aisa);
-
-//     })
-
-// }
 fetch("https://restcountries.com/v3.1/all").then((r) => r.json()).then((data) => {
 
     const Aisa = data.filter((country) => country.region === "Asia");
