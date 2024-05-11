@@ -21,10 +21,10 @@ fetch("https://restcountries.com/v3.1/all").then((r) => r.json()).then((data) =>
     });
 
     if(usDollor){
-        console.log("Country that uses US dollars:", usDollor.name.common);
+        console.log("ues dollor country:", usDollor.name.common);
     }
     else{
-        console.log("No country uses US dollars as currency.");
+        console.log("no use dollor country");
     }
 
   }).catch(error=>console.error("the error data",error));
