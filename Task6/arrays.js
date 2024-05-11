@@ -13,7 +13,7 @@ fetch("https://restcountries.com/v3.1/all").then((r) => r.json()).then((data) =>
       console.log("flag :", country.flag);
     });
 
-    const tpopulationdetails=data.reduce((area,country)=> area+country.population,0); 
+    const tpopulationdetails=data.reduce((acc,country)=> acc+country.population,0); 
     console.log(tpopulationdetails);
 
     const usDollor=data.find(country=>{
