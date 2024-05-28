@@ -118,14 +118,14 @@
     padding: 1rem;
 }
 
-footer {
+/* footer {
     text-align: center;
     padding: 1rem;
     background-color: #333;
     color: #fff;
     font-size: 0.9rem;
     width: 110%;
-}
+} */
 .column {
     flex: 1;
     max-width: 45%;
@@ -211,11 +211,17 @@ footer {
 }
 .columns {
    flex: 1;
-   max-width: 45%;
-   margin: 1rem;
    text-align: center;
 }
 .workss {
    display: flex;
    padding: 1rem;
 }
+
+footer {
+   margin-top: 20px;
+   padding: 20px;
+   background-color: #f9f9f9;
+   text-align: center;
+}
+
