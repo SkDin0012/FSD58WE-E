@@ -5,13 +5,11 @@ import './style.css';
 
 const CartPage = () => {
   const { cartItems, removeFromCart, updateQuantity } = useContext(CartContext);
-
-  // Function to calculate the total quantity
+  
   const getTotalQuantity = () => {
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
-  // Function to calculate the subtotal
   const getSubtotal = () => {
     return cartItems.reduce((total, item) => total + (item.quantity * item.price), 0).toFixed(2);
   };
